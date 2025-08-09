@@ -1,4 +1,5 @@
-ItemId,ImageURL,OriginalPrice,SalePrice,Discount,Rating,Orders,BuyLink,CouponCode,"Product Desc"
+ItemId,ImageURL,OriginalPrice,SalePrice,Discount,Rating,Orders,BuyLink,CouponCode,"ProductDesc"
+
 
 
 
