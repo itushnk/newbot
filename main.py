@@ -170,12 +170,12 @@ def normalize_row_keys(row):
     if "Title" not in out:
         out["Title"] = out.get("Title", "") or out.get("Product Desc", "") or ""
     out["Strengths"] = out.get("Strengths", "")
-# --- SAFE fallback fills for text fields ---
-out["Opening"]   = (out.get("Opening") or "").strip()
-out["Title"]     = (out.get("Title") or out.get("Product Desc") or "").strip()
-out["Strengths"] = (out.get("Strengths") or "").strip()
-out["Product Desc"] = (out.get("Product Desc") or "").strip()
-return out
+    # --- SAFE fallback fills for text fields ---
+    out["Opening"]   = (out.get("Opening") or "").strip()
+    out["Title"]     = (out.get("Title") or out.get("Product Desc") or "").strip()
+    out["Strengths"] = (out.get("Strengths") or "").strip()
+    out["Product Desc"] = (out.get("Product Desc") or "").strip()
+    return out
 
 def read_products(path):
     if not os.path.exists(path):
